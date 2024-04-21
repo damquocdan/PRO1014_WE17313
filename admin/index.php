@@ -147,9 +147,11 @@ if (isset($_GET['act'])) {
         $id_brand = $_POST['id_brand'];
 
         updateProductAdmin($id_pro, $pro_name, $image, $price, $price_sale, $special, $gender, $description, $id_cate, $id_brand);
-        $message = "Cập nhật phòng thành công";
+        
+
       }
       $list_pro = listProductAdmin2('id_pro', 10);
+      $message = "Cập nhật phòng thành công";
       include "product/list.php";
       break;
 
@@ -158,6 +160,7 @@ if (isset($_GET['act'])) {
         $product = deleteProductAdmin($_GET['id_pro']);
       }
       $list_pro = listProductAdmin2('id_pro', 10);
+      $message = "Xoá phòng thành công";
       include "product/list.php";
       break;
 

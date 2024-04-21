@@ -32,11 +32,11 @@
           </div>
           <div class="form-group signup-form-group">
             <label for="" class="form-label signup-form-label">Email</label>
-            <input type="text" class="form-input signup-input" name="email" placeholder="Email" required />
+            <input type="email" class="form-input signup-input" name="email" placeholder="Email" required />
           </div>
           <div class="form-group signup-form-group">
             <label for="" class="form-label signup-form-label">Password</label>
-            <input type="password" class="form-input signup-input" name="password" placeholder="Mật khẩu" required />
+            <input type="password" pattern=".{8,12}" title="Mật khẩu phải có từ 8 đến 12 ký tự" class="form-input signup-input" name="password" placeholder="Mật khẩu (8-12 ký tự)" required />
           </div>
           <div class="form-group signup-form-group">
             <label for="" class="form-label signup-form-label">RePassword</label>

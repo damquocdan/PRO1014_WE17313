@@ -1,5 +1,10 @@
 <div class="content">
 	<div class="container">
+			<?php
+            if (isset($message) && ($message != "")) {
+              echo "<h3 class='alert-success'>$message</h3>";
+            }
+            ?>
 		<div class="page-title">
 			<h4 class="mt-5 font-weight-bold text-center">
 				Danh sách phòng
